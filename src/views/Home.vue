@@ -7,11 +7,11 @@
         entre a universidade e outros setores da sociedade, em parceria com a
         gestão pública e Organizações Não Governamentais (ONGs)
       </p>
-      <AvatarPetianos />
     </div>
-    <div>
+    <div class="ini">
       <Card-noticias class="arco" />
     </div>
+      <AvatarPetianos class="petianos"/>
   </div>
 </template>
 
@@ -26,11 +26,12 @@ export default {
 
 <style>
 .home {
-  display: flex;
+   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 50px;
-  justify-content: center;
+  justify-content: space-around;
+
 }
 .arco {
   width: 400px;
@@ -38,8 +39,11 @@ export default {
   background-color: aqua;
 }
 .txt-content {
+  padding: 30px;
   width: 500px;
-  padding: 20px;
+}
+.txt-content p{
+  text-align: justify;
 }
 .title-pet {
   font-size: 40px;
@@ -51,5 +55,21 @@ export default {
   background-color: rgb(211, 153, 211);
 
   border-radius: 20px;
+}
+.petianos{
+  margin-right: 50px;
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  top: 48%;
+}
+.ini{
+
+}
+@media(max-width: 756px) {
+  .petianos{
+    position: relative;
+    top: auto;
+  }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <v-card class="mx-auto card">
    
-    <v-img src="../assets/Cafe-com-pet.png">
+    <v-img src="../assets/Cafe-com-pet.png" max-width="400px" style="margin: 0 auto;">
     </v-img>
 
     <v-card-title> Destaques </v-card-title>

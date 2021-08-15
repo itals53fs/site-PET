@@ -1,11 +1,10 @@
 <template>
   <footer class="footer">
       <div class="content">
-          <router-link to="#">
-              Exemple
-          </router-link>
-          <router-link to="#">Exemple 1</router-link>
-          <router-link to="#">Exemple 1</router-link>
+          <a href="http://portal.ufvjm.edu.br/" type="blank">
+              <img src="../assets/ufvjm.svg"/>
+          </a>
+
       </div>
   </footer>
 </template>
@@ -28,6 +27,9 @@ export default {
 
     .content a{
         padding: 20px;
+    }
+    .content img{
+        width: 50px !important;
     }
     img{
         width: 50px;

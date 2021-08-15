@@ -1,12 +1,13 @@
 <template>
      <nav class="bar">
-
       <div class="div-nav">
-        <div class="name-pet">PET Conexão dos Saberes</div>
+        <router-link to="/" class="icon">
+        <img src="../assets/icon.png">
+        </router-link>
         <div class="navgation">
-          <router-link to="#">Home</router-link>
-          <router-link to="#">Noticias</router-link>
-          <a href="https://petconexaoufvjm.weebly.com/">O PET</a>
+          <router-link to="/">Home</router-link>
+          <router-link to="construcao">Noticias</router-link>
+          <router-link to="/Sobre">O PET</router-link>
         </div>
       </div>  
     </nav>
@@ -21,19 +22,31 @@ export default {};
   flex-direction: row;
 
 }
-.name-pet{
-  padding: 20px;
+.icon{
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  z-index: 1;
 }
 .navgation{
   display: flex;
   justify-content: center;
   width: 100%;
   padding: 20px;
+  position: absolute;
 }
 .navgation a{
   padding: 20px;
   font-size: 20px;
   text-decoration: none;
   font-weight: 600;
+}
+@media(max-width: 600px){
+  .navgation{
+    display: none;
+  }
+  .icon{
+    margin: -10px auto;
+  }
 }
 </style>

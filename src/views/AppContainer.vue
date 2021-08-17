@@ -9,7 +9,7 @@
       class="b-nav"
     ></v-app-bar-nav-icon>
     <Nav class="nav" />
-    <v-main>
+    <v-main class="main">
       <router-view />
     </v-main>
     <Footer />

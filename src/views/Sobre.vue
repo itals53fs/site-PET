@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <h3>PET Conexão dos Saberes</h3>
+  <div class="text">
 
-    <div class="text">
+    <h3>PET Conexão dos Saberes</h3>
+    <div>
       <p>
         O Grupo PET (Programa de Educação Tutorial) Conexão dos Saberes da
         UFVJM, trata-se de uma ação conjunta entre a universidade e outros
@@ -45,7 +45,12 @@ export default {};
 <style>
 .text{
     text-align: justify;
-    padding: 50px;
+    padding: 50px 30px;
     font-size: 1rem;
+}
+h3{
+  text-align: center;
+  margin: 30px;
+  font-size: 24px;
 }
 </style>

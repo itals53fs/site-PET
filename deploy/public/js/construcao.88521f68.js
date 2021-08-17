@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["construcao"],{"64c2":function(n,t,o){"use strict";o.r(t);var c=function(){var n=this,t=n.$createElement,o=n._self._c||t;return o("div",[o("h3",[n._v("Estamos em construção")]),o("v-icon",{staticStyle:{"font-size":"300px",color:""}},[n._v("mdi-hammer")])],1)},e=[],s={},a=s,r=o("2877"),i=o("6544"),l=o.n(i),u=o("132d"),p=Object(r["a"])(a,c,e,!1,null,null,null);t["default"]=p.exports;l()(p,{VIcon:u["a"]})}}]);
-//# sourceMappingURL=construcao.88521f68.js.map

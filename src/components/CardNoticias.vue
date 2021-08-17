@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto card">
+  <v-card class="mx-auto card" max-width="300px">
    
     <v-img src="../assets/Cafe-com-pet.png" max-width="400px" style="margin: 0 auto;">
     </v-img>

@@ -1,52 +1,62 @@
 <template>
-     <nav class="bar">
-      <div class="div-nav">
+  <nav class="bar">
+    <div class="div-nav">
         <router-link to="/" class="icon">
-        <img src="../assets/icon.png">
+          PET Conexão dos Saberes
+          <!--         <img src="../assets/icon.png"> -->
         </router-link>
-        <div class="navgation">
-          <router-link to="/">Home</router-link>
-          <router-link to="construcao">Noticias</router-link>
-          <router-link to="/Sobre">O PET</router-link>
-        </div>
-      </div>  
-    </nav>
+      <div class="navgation">
+        <router-link to="/">Home</router-link>
+        <router-link to="construcao">Noticias</router-link>
+        <router-link to="/Sobre">O PET</router-link>
+      </div>
+    </div>
+  </nav>
 </template>
 <script>
 export default {};
 </script>
     
-<style>
-.div-nav{
+<style scoped>
+.div-nav {
   display: flex;
   flex-direction: row;
-
 }
-.icon{
-  width: 50px;
-  height: 50px;
-  margin: 20px;
+.icon {
   z-index: 1;
+  margin: 10px;
+  left: 0px;
+  text-decoration: none;
+  color: white !important;
+  font-weight: 500 !important;
+  font-size: 30px;
+  line-height: 30px;
 }
-.navgation{
+.navgation {
   display: flex;
   justify-content: center;
   width: 100%;
   padding: 20px;
-  position: absolute;
+  position: relative;
 }
-.navgation a{
+.navgation a {
   padding: 20px;
   font-size: 20px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
+  color: white !important;
 }
-@media(max-width: 600px){
-  .navgation{
+.bar {
+  background-color: #0275d8;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (max-width: 695px) {
+  .navgation {
     display: none;
   }
-  .icon{
-    margin: -10px auto;
+  .icon {
+    font-size: 20px;
   }
 }
 </style>

@@ -22,7 +22,7 @@ export default {
         display: flex;
         justify-content: center;
         flex-direction: column;
-         background-color: rgb(196, 120, 196)
+         background-color: #f1f1f1;
     }
 
     .content a{

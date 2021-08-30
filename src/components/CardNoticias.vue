@@ -45,6 +45,6 @@ export default {
 <style scoped>
 .card {
   border-radius: 20px !important;
-  background-color: rgb(243, 229, 243) !important;
+  text-align: left;
 }
 </style>

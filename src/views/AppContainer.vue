@@ -10,7 +10,7 @@
     ></v-app-bar-nav-icon>
     <Nav class="nav" />
     </div>
-    <v-main class="main">
+    <v-main class="main1">
       <router-view />
     </v-main>
     <Footer />
@@ -33,6 +33,8 @@ export default {
 }
 .b-nav {
   display: none;
+  background-color: beige;
+  margin: 7px;
 }
 .div-nav{
   display: flex;
@@ -42,9 +44,5 @@ export default {
   .b-nav {
     display: flex;
   }
-}
-#inspire {
-  /*  background-image: linear-gradient(to bottom, white, purple); */
-  /* background-image: linear-gradient(to bottom, white, #c761c7); */
 }
 </style>

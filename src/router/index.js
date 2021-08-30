@@ -4,6 +4,7 @@ import AppContainer from '../views/AppContainer.vue'
 const Home = ()=> import (/* webpackChunkName: "AppContainer" */ '../views/Home.vue' )
 const Sobre = ()=> import (/* webpackChunkName: "Sobre" */ '../views/Sobre.vue' )
 const construcao = ()=> import (/* webpackChunkName: "construcao" */ '../views/construcao.vue' )
+const galeria = ()=> import (/* webpackChunkName: "galeria" */ '../views/Galeria.vue' )
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
         path: '/construcao',
         name: 'construcao',
         component: construcao,
+      },
+      {
+        path: '/galeria',
+        name: 'Galeria',
+        component: galeria,
       }
     ]
   },

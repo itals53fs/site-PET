@@ -1,15 +1,19 @@
 <template>
   <nav class="bar">
     <div class="div-nav">
-        <router-link to="/" class="icon">
-          PET Conexão dos Saberes
-          <!--         <img src="../assets/icon.png"> -->
-        </router-link>
+      <router-link to="/" class="icon">
+        PET Conexão dos Saberes
+        <!--         <img src="../assets/icon.png"> -->
+      </router-link>
       <div class="navgation">
         <router-link to="/">Home</router-link>
         <router-link to="construcao">Noticias</router-link>
         <router-link to="/Sobre">O PET</router-link>
       </div>
+    </div>
+    <v-divider />
+    <div class="pesquisa">
+      <input type="search" class="input" placeholder="Search.." />
     </div>
   </nav>
 </template>
@@ -50,6 +54,17 @@ export default {};
   background-color: #0275d8;
   margin: 0 auto;
   width: 100%;
+  height: 120px;
+}
+.input {
+  background-color: aliceblue;
+  border-radius: 20px;
+  height: 34px;
+  outline: none;
+  margin: 5px;
+}
+.pesquisa {
+  display: none;
 }
 @media (max-width: 695px) {
   .navgation {
@@ -57,6 +72,9 @@ export default {};
   }
   .icon {
     font-size: 20px;
+  }
+  .pesquisa {
+    display: flex;
   }
 }
 </style>

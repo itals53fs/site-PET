@@ -42,9 +42,10 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
+
 .text{
-    text-align: justify;
+    text-align: left;
     padding: 50px 30px;
     font-size: 1rem;
 }

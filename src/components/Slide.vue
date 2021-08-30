@@ -38,6 +38,6 @@ export default {
   display: flex;
 }
 .carousel{
-  max-height: 400px;
+  max-height: 600px;
 }
 </style>

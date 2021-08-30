@@ -23,6 +23,12 @@
     <AvatarPetianos class="petianos" />
     </div>
   </div>
+  <div>
+
+  </div>
+  <div class="div">
+    <Slide2 v-for="i in 3" :key="i"/>
+  </div>
 </div>
 </template>
 
@@ -30,9 +36,15 @@
 import CardNoticias from "../components/CardNoticias.vue";
 import AvatarPetianos from "../components/AvatarPetianos.vue";
 import Slide from "../components/Slide.vue";
+import Slide2 from "../components/Slide2.vue";
 
 export default {
-  components: { CardNoticias, AvatarPetianos, Slide },
+  components: { CardNoticias, AvatarPetianos, Slide, Slide2 },
+  data(){
+    return{
+      i:0
+    }
+  }
 };
 </script>
 
@@ -59,6 +71,7 @@ export default {
 }
 .title-pet {
   font-size: 40px;
+  text-align: left;
 }
 .noticias-link {
   padding: 20px;
@@ -95,6 +108,21 @@ export default {
   width: 30px;
   font-size: 12px !important;
   margin-top: -2px;
+}
+.link-galeria{
+  font-size: 26px;
+  margin: 20px;
+  padding: 20px;
+}
+.link-galeria a, i{
+  text-decoration: none !important;
+  color: #0275d8 !important;
+
+}
+.div{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 756px) {

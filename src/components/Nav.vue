@@ -62,6 +62,7 @@ export default {};
   height: 34px;
   outline: none;
   margin: 5px;
+  padding-left: 10px;
 }
 .pesquisa {
   display: none;

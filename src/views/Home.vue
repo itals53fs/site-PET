@@ -10,17 +10,10 @@
         entre a universidade e outros setores da sociedade, em parceria com a
         gestão pública e Organizações Não Governamentais (ONGs)
       </p>
-      <div for="" class="label-input">
-        <!--   <v-icon class="icon-input">mdi-magnify</v-icon> -->
-        <input type="search" class="input" />
-        <v-btn color="primary" class="btn">Search</v-btn>
-      </div>
+      
     </div>
     <div class="ini">
       <Card-noticias class="arco" />
-    </div>
-    <div>
-    <AvatarPetianos class="petianos" />
     </div>
   </div>
   <div>
@@ -29,20 +22,25 @@
   <div class="div">
     <Slide2 v-for="i in 3" :key="i"/>
   </div>
+  <h3 class="petianos-h1">Petianos</h3>
+<div class="petianos">
+  <Avatar-petianos v-for="i in 13" :key="i"/>
 </div>
+</div>
+
 </template>
 
 <script>
+import AvatarPetianos from '../components/AvatarPetianos.vue';
 import CardNoticias from "../components/CardNoticias.vue";
-import AvatarPetianos from "../components/AvatarPetianos.vue";
 import Slide from "../components/Slide.vue";
 import Slide2 from "../components/Slide2.vue";
 
 export default {
-  components: { CardNoticias, AvatarPetianos, Slide, Slide2 },
+  components: { CardNoticias, Slide, Slide2, AvatarPetianos },
   data(){
     return{
-      i:0
+  i:0
     }
   }
 };
@@ -81,34 +79,6 @@ export default {
 
   border-radius: 20px;
 }
-.petianos {
-  position: absolute;
-  z-index: 1;
-  left: 20px;
-  top: 90%;
-}
-.input {
-  background-color: aliceblue;
-  border-radius: 20px 0 0 20px;
-  height: 44px;
-  outline: none;
-  padding: 20px;
-}
-.icon-input {
-  position: absolute;
-  left: 32px;
-}
-.label-input {
-  margin: 60px 0px;
-  position: relative;
-}
-.label-input .btn {
-  border-radius: 0 20px 20px 0;
-  height: 45px !important;
-  width: 30px;
-  font-size: 12px !important;
-  margin-top: -2px;
-}
 .link-galeria{
   font-size: 26px;
   margin: 20px;
@@ -123,13 +93,18 @@ export default {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  position: relative;
+  width: 100%;
 }
+.petianos{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.petianos-h1{
 
-@media (max-width: 756px) {
-  .petianos {
-    position: relative;
-    top: auto;
-    margin: 30px;
-  }
+  margin: 40px 0;
+  font-size: 24px;
 }
 </style>

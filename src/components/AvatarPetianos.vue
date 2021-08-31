@@ -1,30 +1,76 @@
 <template>
-  <v-card class="mx-auto card" max-width="200" height="100px">
-    <v-avatar color="blue avatar" size="36">
-      <img src="../assets/ana.jpeg" alt="">
-    </v-avatar>
-    <v-avatar color="red avatar" size="56" style="z-index:1;">
-      <img src="../assets/bianca.jpeg" alt="">
-    </v-avatar>
-    <v-avatar color="green avatar" size="36" style="font-size:10px;"> +10</v-avatar>
-<!--     <v-avatar color="primary avatar" size="56">4</v-avatar>
-    <v-avatar color="grey avatar" size="56">5</v-avatar>
-    <v-avatar color="pink avatar" size="56">6</v-avatar>
-    <v-avatar color="white avatar" size="56">...</v-avatar> -->
-    <router-link to="/construcao" type="text" class="link">Todos membos</router-link>
-  </v-card>
+  <v-container
+    fluid
+    style="width:50px; margin: 10px"
+  >
+    <v-row justify="center">
+      <v-menu
+        bottom
+        min-width="200px"
+        rounded
+        offset-y
+      >
+        <template v-slot:activator="{ on }">
+          <v-btn
+            icon
+            x-large
+            v-on="on"
+          >
+            <v-avatar
+              color="brown"
+              size="48"
+            >
+              <span class="white--text text-h5">{{ user.initials }}</span>
+            </v-avatar>
+          </v-btn>
+        </template>
+        <v-card>
+          <v-list-item-content class="justify-center">
+            <div class="mx-auto text-center">
+              <v-avatar
+                color="brown"
+              >
+                <span class="white--text text-h5">{{ user.initials }}</span>
+              </v-avatar>
+              <h3>{{ user.fullName }}</h3>
+              <p class="text-caption mt-1">
+                {{ user.email }}
+              </p>
+              <v-divider class="my-3"></v-divider>
+              <v-btn
+                depressed
+                rounded
+                text
+              >
+                Edit Account
+              </v-btn>
+              <v-divider class="my-3"></v-divider>
+              <v-btn
+                depressed
+                rounded
+                text
+              >
+                Disconnect
+              </v-btn>
+            </div>
+          </v-list-item-content>
+        </v-card>
+      </v-menu>
+    </v-row>
+  </v-container>
 </template>
+
+<script>
+  export default {
+    data: () => ({
+      user: {
+        initials: 'JD',
+        fullName: 'John Doe',
+        email: 'john.doe@doe.com',
+      },
+    }),
+  }
+</script>
+
 <style scoped>
-.card {
-  background-color: #f3e5f3;
-  border-radius: 20px;
-  padding: 7px;
-}
-.avatar {
-  margin-right: -7px;
-}
-.link{
-  font-size:10px;
-  display: block;
-}
 </style>
